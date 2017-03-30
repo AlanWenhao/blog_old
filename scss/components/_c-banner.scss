@@ -1,0 +1,45 @@
+.c-banner {
+	height: 600px;
+	// margin-top: -20px;
+
+	background: url('../../dist/img/index-banner.jpg') no-repeat;
+	background-size: cover;
+
+	&__layer {
+		height: 100%;
+		background: rgba(0,0,0,0.2);
+	}
+
+	&__title {
+		padding-top: 150px;
+		
+		font-size: 60px;
+		line-height: 80px;
+		color: $color-white;
+	}
+
+	&__des {
+		line-height: 40px;
+
+		font-size: 20px;
+		color: $color-white;
+	}
+
+	&__buttons {
+		text-align: center;
+
+		.roll-bar {
+			width: 140px;
+			height: 36px; 
+			margin: 10px;
+		}
+	}
+
+	&__button-about {
+		
+	}
+
+	&__button-contact {
+		
+	}
+}
