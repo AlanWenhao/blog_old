@@ -20,6 +20,10 @@
 		padding-top: 110px;
 	}
 
+	&__photo-wrap {
+		// background: url('../../dist/img/photo.png');
+	}
+
 	&__photo {
 		height: 280px;
 		margin: 10px 0;
@@ -27,17 +31,36 @@
 
 	&__photo-pic {
 		height: 180px;
+
 		background: url('../../dist/img/pic-demo.jpg') no-repeat;
 		background-size: cover;
 	}
 
+	&__photo-layer {
+		height: 100%;
+
+		background: $color-black;
+		opacity: 0;
+		transition: all .5s;
+		&:hover {
+			opacity: 1;
+			background: rgba(0,0,0,0.7);
+		}
+	}
+
+	&__photo-title {
+		width: 100%;
+		display: inline-block;
+
+		text-align: center;
+	}
+
 	&__slider {
 		height: 300px;
+		margin-bottom: 80px;
 	}
 
 	&__contact {
-		margin-top: 50px;
-
 		background: url('../../dist/img/map-bg.jpg')no-repeat;
 		background-size: cover;
 	}
@@ -59,6 +82,22 @@
 
 	&__input {
 		margin-bottom: 20px;
+	}
+
+	&__input-child {
+		border-radius: 2px;
+	}
+
+	&__submit {
+		border: 2px solid $color-blue;
+		background: $color-blue;
+
+		transition: all .5s;
+		&:hover {
+			background: transparent;
+			border: 2px solid $color-white;
+			color: $color-white;
+		}
 	}
 
 	//the style for swiper
@@ -87,5 +126,13 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+    	opacity: 0.3;
+    }
+
+    .swiper-pagination {
+    	opacity: 0.4;
     }
 }
