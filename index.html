@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 	<title>Document</title>
 	<link rel="stylesheet" href="dist/css/plugin.min.css">
 	<link rel="stylesheet" href="dist/css/main.min.css">
@@ -22,8 +22,8 @@
 	        <div class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav navbar-right">
 	                <li><a class="text-center c-nav__btn" href="#home">首页</a></li>
-	                <li><a class="text-center c-nav__btn" href="#bbs">文章</a></li>
-	                <li><a class="text-center c-nav__btn" href="#html5">摄影</a></li>
+	                <li><a class="text-center c-nav__btn" href="html/listing.html">文章</a></li>
+	                <li><a class="text-center c-nav__btn" href="#photo">摄影</a></li>
 	                <li><a class="text-center c-nav__btn" href="#course">作品展示</a></li>
 	            </ul>
 	        </div>
@@ -31,6 +31,8 @@
 	</nav>
 	<!-- banner -->
 	<div class="c-banner">
+	<div class="c-banner__turn c-banner__turn-one"></div>
+		<div class="c-banner__turn c-banner__turn-two"></div>
 		<div class="c-banner__layer">
 			<div class="container">
 				<h2 class="c-banner__title text-center wow fadeInUp
@@ -38,16 +40,16 @@
 					>
 						personal website
 					</h2>
-				<p class="c-banner__des text-center wow fadeIn"
-					data-wow-duration="1.6s" data-wow-delay="0.7s"
+				<div class="c-banner__des text-center wow fadeInUp"
+					data-wow-duration="1s" data-wow-delay="0.7s"
 					>
 						think smart , make your own style
-					</p>
+					</div>
 				<div class="col-md-12 c-banner__buttons center-block wow fadeIn"
 					data-wow-duration="1.6s" data-wow-delay="1s">
-					<a class="roll-bar c-banner__button-about btn btn-default scroll-btn"
+					<a class="roll-bar c-banner__button-about c-banner__button scroll-btn"
 						data-scroll="introduce">about website</a>
-					<a class="roll-bar c-banner__button-contact btn btn-default scroll-btn"
+					<a class="roll-bar c-banner__button-contact c-banner__button scroll-btn"
 						data-scroll="contact">contact me</a>
 				</div>
 			</div>
@@ -56,7 +58,7 @@
 	<!-- intr -->
 	<div class="c-intr">
 		<div class="container">
-			<div class="row">
+			<div class="row wow fadeInUp" data-wow-duration=".7s">
 				<div class="col-md-4 text-center c-intr__con">
 					<a href="##">
 						<img class="c-intr__img" src="dist/img/intr1.png" alt="">
@@ -81,6 +83,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!-- 技术文章 -->
 	<div class="section c-portion" id="introduce">
 		<div class="container c-portion__head">
@@ -118,45 +121,51 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container c-portion__photo-wrap wow fadeIn" data-wow-duration="3s">
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic">
+					<div class="c-portion__photo-layer">
+						<div class="c-portion__photo-button"></div>
+					</div>
+				</div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic">
+					<div class="c-portion__photo-layer"></div>
+				</div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic"></div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic"></div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic"></div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic"></div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic"></div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			<div class="col-md-3 col-sm-6 c-portion__photo">
-				<div class="col-xs-12 c-portion__photo-pic"></div>
-				<h4 class="text-center">the tiele of photo</h4>
+				<div class="c-portion__photo-pic"></div>
+				<h4 class="text-center c-portion__photo-title">the tiele of photo</h4>
 				<p>the description of this photo...the description of this photo...the description of this photo...</p>
 			</div>
 			
@@ -174,7 +183,7 @@
 		</div>
 		<div class="container">
 			<div class="c-portion__slider col-sm-8 col-sm-offset-2">
-				<div class="swiper-container">
+				<div class="swiper-container wow fadeInDown">
 			        <div class="swiper-wrapper">
 			            <div class="swiper-slide">Slide 1</div>
 			            <div class="swiper-slide">Slide 2</div>
@@ -225,19 +234,19 @@
 	                <div class="col-md-6  wow fadeInRight">
 	                    <form action="#" method="post">
 	                        <div class="col-md-6 c-portion__input">
-	                            <input type="text" class="form-control" placeholder="您的姓名"/>
+	                            <input type="text" class="c-portion__input-child form-control" placeholder="您的姓名"/>
 	                        </div>
 	                        <div class="col-md-6 c-portion__input">
-	                            <input type="email" class="form-control" placeholder="您的邮箱"/>
+	                            <input type="email" class="c-portion__input-child form-control" placeholder="您的邮箱"/>
 	                        </div>
 	                        <div class="col-md-12 c-portion__input">
-	                            <input type="text" class="form-control" placeholder="标题"/>
+	                            <input type="text" class="c-portion__input-child form-control" placeholder="标题"/>
 	                        </div>
 	                        <div class="col-md-12 c-portion__input">
-	                            <textarea class="form-control" placeholder="留言内容" rows="4"></textarea>
+	                            <textarea class="c-portion__input-child form-control" placeholder="留言内容" rows="4"></textarea>
 	                        </div>
 	                        <div class="col-md-8 c-portion__input">
-	                            <input type="submit" class="form-control" value="提交"/>
+	                            <input type="submit" class="c-portion__input-child form-control c-portion__submit" value="提交"/>
 	                        </div>
 	                    </form>
 	                </div>
@@ -250,7 +259,8 @@
 			<span>Copyright &right; 20XX-20XX www.xxxx.com &nbsp; XXXX号备案</span>
 		</div>
 	</footer>
-	<div class="o-to-top scroll-btn hidden" data-scroll="top-anchor">
+
+	<div class="o-to-top scroll-btn wow rollIn" data-scroll="top-anchor">
 		<span class="glyphicon glyphicon-chevron-up"></span>
 	</div>
 
