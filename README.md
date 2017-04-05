@@ -9,3 +9,7 @@
 
 the url is: https://alanwenhao.github.io/blog/
 
+## Notice
+
+1.change the CI default set in system/core/router.php about line 298 from 'start' to 'end'.
+
