@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 	<title>Document</title>
-	<link rel="stylesheet" href="dist/css/plugin.min.css">
-	<link rel="stylesheet" href="dist/css/main.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() . '/dist/index/' ?>css/plugin.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() . '/dist/index/' ?>css/main.min.css">
 </head>
 <body>
 	<!--导航-->
@@ -21,8 +21,8 @@
 	        </div>
 	        <div class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav navbar-right">
-	                <li><a class="text-center c-nav__btn" href="#home">首页</a></li>
-	                <li><a class="text-center c-nav__btn" href="html/listing.html">文章</a></li>
+	                <li><a class="text-center c-nav__btn" href="<?php echo site_url() . '/index/home/toIndex' ?>">首页</a></li>
+	                <li><a class="text-center c-nav__btn" href="<?php echo site_url() . '/index/home/blog' ?>">文章</a></li>
 	                <li><a class="text-center c-nav__btn" href="#photo">摄影</a></li>
 	                <li><a class="text-center c-nav__btn" href="#course">作品展示</a></li>
 	            </ul>
@@ -61,21 +61,21 @@
 			<div class="row wow fadeInUp" data-wow-duration=".7s">
 				<div class="col-md-4 text-center c-intr__con">
 					<a href="##">
-						<img class="c-intr__img" src="dist/img/intr1.png" alt="">
+						<img class="c-intr__img" src="<?php echo base_url() . '/dist/index/' ?>img/intr1.png" alt="">
 						<h4 class="c-intr__title">文字标题</h4>
 					</a>
 					<p class="c-intr__text">文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</p>
 				</div>
 				<div class="col-md-4 text-center c-intr__con">
 					<a href="##">	
-						<img class="c-intr__img" src="dist/img/intr2.png" alt="">
+						<img class="c-intr__img" src="<?php echo base_url() . '/dist/index/' ?>img/intr2.png" alt="">
 						<h4 class="c-intr__title">文字标题</h4>
 					</a>
 					<p class="c-intr__text">文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</p>
 				</div>
 				<div class="col-md-4 text-center c-intr__con">
 					<a href="##">
-						<img class="c-intr__img" src="dist/img/intr3.png" alt="">
+						<img class="c-intr__img" src="<?php echo base_url() . '/dist/index/' ?>img/intr3.png" alt="">
 					</a>
 					<h4 class="c-intr__title">文字标题</h4>
 					<p class="c-intr__text">文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</p>
@@ -97,10 +97,10 @@
 		<div class="container">
 			<div class="col-md-7">
 				<img class="c-portion__blog-pic1 hidden-xs wow fadeInUp"
-					src="dist/img/blog-intr2.png" alt=""
+					src="<?php echo base_url() . '/dist/index/' ?>img/blog-intr2.png" alt=""
 					data-wow-duration="1s" data-wow-delay="0.5s">
 				<img class="c-portion__blog-pic2 hidden-xs wow fadeInUp"
-					src="dist/img/blog-intr1.png" alt=""
+					src="<?php echo base_url() . '/dist/index/' ?>img/blog-intr1.png" alt=""
 					data-wow-duration="1s" data-wow-delay="0.8s">
 			</div>
 			<div class="col-md-5 c-portion__description wow fadeInRight"
@@ -264,7 +264,7 @@
 		<span class="glyphicon glyphicon-chevron-up"></span>
 	</div>
 
-	<script src="dist/js/plugin.js"></script>
-	<script src="dist/js/main.min.js"></script>
+	<script src="<?php echo base_url() . '/dist/index/' ?>js/plugin.js"></script>
+	<script src="<?php echo base_url() . '/dist/index/' ?>js/main.min.js"></script>
 </body>
 </html>
