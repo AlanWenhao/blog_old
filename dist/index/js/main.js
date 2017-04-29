@@ -1,5 +1,5 @@
 $( function() {
-
+	
 	// banner 轮播
 	( function() {
 		var timeIn = setInterval( function() {

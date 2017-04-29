@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>phtot</title>
+	<title>blog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 	<link rel="stylesheet" href="<?php echo base_url() . 'dist/index/' ?>css/plugin.min.css">
-	<link rel="stylesheet" href="<?php echo base_url() . 'dist/index/' ?>css/main.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() . 'dist/index/' ?>css/main.css">
 </head>
 <body>
 	<!--导航-->
@@ -21,7 +21,7 @@
 	        </div>
 	        <div class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav navbar-right">
-	                <li><a class="text-center c-nav__btn" href="<?php echo site_url() . '/index/home/toIndex' ?>">首页</a></li>
+	                <li><a class="text-center c-nav__btn" href="<?php echo site_url() . '/index/home/homePage' ?>">首页</a></li>
 	                <li><a class="text-center c-nav__btn" href="<?php echo site_url() . '/index/home/blog' ?>">文章</a></li>
 	                <li><a class="text-center c-nav__btn" href="#html5">摄影</a></li>
 	                <li><a class="text-center c-nav__btn" href="#course">作品展示</a></li>
@@ -56,8 +56,8 @@
 		</div>
 	</div>
 	<div class="c-listing" id="introduce">
-		<div class="row">
-			<div class="container">
+		<div class="container">
+			<div class="row">
 				<div class="col-md-8">
 					<article class="c-listing__group">
 						<div class="c-listing__title-group">
@@ -68,7 +68,7 @@
 							</p>
 						</div>
 						<div class="c-listing__text">这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，</div>
-						<div class="c-listing__button">阅读全文</div>
+						<a class="c-listing__button" href="<?php echo site_url() . '/index/home/article' ?>">阅读全文</a>
 						<div class="c-listing__type">
 							<span class="glyphicon glyphicon-tags"></span>
 							<strong class="c-listing__type-text">前端构建</strong>
@@ -83,22 +83,7 @@
 							</p>
 						</div>
 						<div class="c-listing__text">这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，</div>
-						<div class="c-listing__button">阅读全文</div>
-						<div class="c-listing__type">
-							<span class="glyphicon glyphicon-tags"></span>
-							<strong class="c-listing__type-text">前端构建</strong>
-						</div>
-					</article>
-					<article class="c-listing__group">
-						<div class="c-listing__title-group">
-							<h3 class="c-listing__title text-center">文章标题</h3>
-							<p class="c-listing__from">
-								出处：<a href="##">原创</a>
-								<span class="c-listing__time">2016-12-2</span>
-							</p>
-						</div>
-						<div class="c-listing__text">这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，这里是一些主要的介绍，</div>
-						<div class="c-listing__button">阅读全文</div>
+						<a class="c-listing__button" href="<?php echo base_url() . '/index/home/article' ?>">阅读全文</a>
 						<div class="c-listing__type">
 							<span class="glyphicon glyphicon-tags"></span>
 							<strong class="c-listing__type-text">前端构建</strong>
@@ -194,6 +179,6 @@
 	</div>
 	
 	<script src="<?php echo base_url() . 'dist/index/' ?>js/plugin.js"></script>
-	<script src="<?php echo base_url() . 'dist/index/' ?>js/main.min.js"></script>
+	<script src="<?php echo base_url() . 'dist/index/' ?>js/main.js"></script>
 </body>
 </html>

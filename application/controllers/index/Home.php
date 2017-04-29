@@ -12,8 +12,13 @@ class Home extends CI_Controller {
 		$this->load->view('index/blog.html');
 	}
 
-	public function toIndex()
+	public function homePage()
 	{
 		$this->load->view('index/home.html');
+	}
+
+	public function article()
+	{
+		$this->load->view('index/article.html');
 	}
 }

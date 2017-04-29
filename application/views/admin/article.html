@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="<?php echo base_url() . 'dist/index/' ?>css/plugin.min.css">
+	<script src="<?php echo base_url() ?>org/ueditor/ueditor.all.js"></script>
+	<script type="text/javascript">
+		window.UEDITOR_HOME_URL = "<?php echo base_url() ?>org/ueditor/";
+		window.onload = function(){
+			window.UEDITOR_CONFIG.initialFrameWidth = 900;
+			window.UEDITOR_CONFIG.initialFrameHeight = 400;
+			var ue = UE.getEditor('content');
+		}
+	</script>
+	<script src="<?php echo base_url() ?>org/ueditor/ueditor.config.js"></script>
+</head>
+<body>
+	<div class="container">
+	<h2>添加文章</h2>
+		<form action="<?php echo site_url('admin/article/send') ?>" method="POST" enctype="multipart/form-data">
+			<div>
+				<!-- <select name="type" id="">
+					<option value="1"<?php echo set_select('cid', '1', TRUE) ?>>技术文章</option>
+					<option value="2"<?php echo set_select('cid', '2') ?>>其他文章</option>
+				</select> -->
+				<input type="text" name="type" value="<?php echo set_value('type') ?>" placeholder="文章类型">
+				<span><?php echo form_error('cid', '<span>', '</span>') ?></span>
+			</div>
+			<div>
+				<input type="text" name="title" value="<?php echo set_value('title') ?>" placeholder="文章标题">
+				<span><?php echo form_error('title', '<span>', '</span>') ?></span>
+			</div>
+			<div>
+				<input type="text" name="time" placeholder="发布时间">
+			</div>
+			<div>
+				<input type="text" name="writer" placeholder="作者">
+			</div>
+			<!-- <div>
+				<input type="file" name="pic">
+			</div> -->
+			<div>
+				<textarea name="info" id="" cols="30" rows="10" placeholder="摘要"><?php echo set_value('info') ?></textarea><?php echo form_error('info', '<span>', '</span>'); ?>
+			</div>
+			<div>
+				<textarea name="content" id="content" cols="30" rows="10" placeholder=""><?php echo set_value('content') ?></textarea><?php echo form_error('content', '<span>', '</span>'); ?>
+			</div>
+			<div>
+				<input class="btn btn-default" type="submit">
+			</div>
+		</form>	
+	</div>
+</body>
+</html>

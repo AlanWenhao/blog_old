@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="<?php echo base_url() . 'dist/index/' ?>css/plugin.min.css">
+</head>
+<body>
+	<div class="container">
+		<h2>编辑文章</h2>
+		<form action="<?php echo site_url('admin/article/edit') ?>" method="POST" enctype="multipart/form-data">
+			<div>
+				<select name="cid" id="">
+					<option value="1"<?php echo set_select('cid', '1', TRUE) ?>>技术文章</option>
+					<option value="2"<?php echo set_select('cid', '2') ?>>其他文章</option>
+				</select>
+			</div>
+			<div>
+				<input type="text" name="title" value="<?php echo set_value('title') ?>" placeholder="文章标题">
+				<span><?php echo form_error('title', '<span>', '</span>') ?></span>
+			</div>
+			<div>
+				<input type="text" name="type" placeholder="发布时间">
+			</div>
+			<div>
+				<textarea name="info" id="" cols="30" rows="10" placeholder="摘要"><?php echo set_value('info') ?></textarea><?php echo form_error('info', '<span>', '</span>'); ?>
+			</div>
+			<div>
+				<textarea name="content" id="" cols="30" rows="10" placeholder="内容"><?php echo set_value('content') ?></textarea><?php echo form_error('content', '<span>', '</span>'); ?>
+			</div>
+			<div>
+				<input class="btn btn-default" type="submit">
+			</div>
+		</form>	
+	</div>
+</body>
+</html>
