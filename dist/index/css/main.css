@@ -45,7 +45,7 @@ a:hover {
     transition: all .7s; }
 
 .c-banner {
-  height: 600px;
+  height: 700px;
   position: relative;
   background: #333;
   overflow: hidden; }
@@ -58,16 +58,16 @@ a:hover {
   .c-banner .scale-out {
     animation: scaleOut 2s forwards; }
   .c-banner__turn-one {
-    background: url("../../dist/img/banner-bg3.jpg") no-repeat center top;
+    background: url("../img/banner-bg3.jpg") no-repeat center center;
     background-size: cover; }
   .c-banner__turn-two {
-    background: url("../../dist/img/banner-bg1.jpg") no-repeat center top;
+    background: url("../img/banner-bg1.jpg") no-repeat center center;
     background-size: cover; }
   .c-banner__layer {
     height: 100%;
     background: rgba(0, 0, 0, 0.2); }
   .c-banner__title {
-    padding-top: 150px;
+    padding-top: 200px;
     font-size: 60px;
     line-height: 80px;
     color: #fff;
@@ -154,13 +154,13 @@ a:hover {
 
 .c-portion__photo-pic {
   height: 180px;
-  background: url("../../dist/img/pic-demo.jpg") no-repeat;
+  background: url("../img/pic-demo.jpg") no-repeat;
   background-size: cover; }
 
 .c-portion__photo-layer {
   height: 100%;
+  position: relative;
   background: #333;
-  opacity: 0;
   transition: all .5s; }
   .c-portion__photo-layer:hover {
     opacity: 1;
@@ -171,12 +171,28 @@ a:hover {
   display: inline-block;
   text-align: center; }
 
+.c-portion__photo-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer; }
+
 .c-portion__slider {
   height: 300px;
   margin-bottom: 80px; }
 
 .c-portion__contact {
-  background: url("../../dist/img/map-bg.jpg") no-repeat;
+  background: url("../img/map-bg.jpg") no-repeat;
   background-size: cover; }
 
 .c-portion__contact-cover {
@@ -253,19 +269,21 @@ a:hover {
     font-size: 16px;
     letter-spacing: 1px; }
   .c-listing__button {
+    display: block;
     width: 80px;
     height: 32px;
     margin-bottom: 15px;
     text-align: center;
     line-height: 30px;
-    background: #39a5ed;
-    border: 2px solid #39a5ed;
+    color: #fff;
+    background: #ff3b1b;
+    border: 2px solid #ff3b1b;
     border-radius: 2px;
     cursor: pointer;
     transition: all .5s; }
     .c-listing__button:hover {
       background: transparent;
-      color: #39a5ed; }
+      color: #ff3b1b; }
   .c-listing__type {
     line-height: 30px; }
   .c-listing__type-text {
@@ -280,3 +298,15 @@ a:hover {
   .c-listing__aside-contain {
     padding-top: 10px;
     border-top: 1px solid gray; }
+
+.c-board {
+  height: 300px;
+  background: blue; }
+
+.c-article {
+  background: #ebebeb; }
+  .c-article__page {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 1px 15px 10px 15px;
+    background: #fff; }

@@ -35,20 +35,22 @@
 	}
 
 	&__button {
+		display: block;
 		width: 80px;
 		height: 32px;
 		margin-bottom: 15px;
 
 		text-align: center;
 		line-height: 30px;
-		background: $color-blue;
-		border: 2px solid $color-blue;
+		color: $color-white;
+		background: $color-red;
+		border: 2px solid $color-red;
 		border-radius: 2px;
 		cursor: pointer;
 		transition: all .5s;
 		&:hover {
 			background: transparent;
-			color: $color-blue;
+			color: $color-red;
 		}
 	}
 
